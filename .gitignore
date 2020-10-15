@@ -1,0 +1,10 @@
+#General
+PointToPointMessagingWithRabbitMQ/.vs
+
+#Consumer
+PointToPointMessagingWithRabbitMQ/Consumer/bin
+PointToPointMessagingWithRabbitMQ/Consumer/obj
+
+#Publisher
+PointToPointMessagingWithRabbitMQ/Publihser/bin
+PointToPointMessagingWithRabbitMQ/Publihser/obj

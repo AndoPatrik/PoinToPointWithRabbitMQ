@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+  publisher:
+    image: PointToPointMessagingWithRabbitMQ/Consumer/.
+  consumer:
+    images: PointToPointMessagingWithRabbitMQ/Publihser/.
