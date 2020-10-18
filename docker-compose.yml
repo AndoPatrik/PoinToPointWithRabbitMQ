@@ -2,7 +2,13 @@ version: "3.8"
 services:
   rabbitmq:
     image: rabbitmq:3-management
+    ports:
+        - "15672:15672"
+        - "5672:5672"
   publisher:
-    image: PointToPointMessagingWithRabbitMQ/Consumer/.
+    build: PointToPointMessagingWithRabbitMQ/Consumer/.
   consumer:
-    images: PointToPointMessagingWithRabbitMQ/Publihser/.
+    build: PointToPointMessagingWithRabbitMQ/Publihser/.
+    ports:
+        - "5000:5000"
+        - "5001:5001"
